@@ -6,5 +6,5 @@
   "documentation": "https://github.com/tykarol/home-assistant-huawei-gpon-reboot",
   "iot_class": "local_polling",
   "issue_tracker": "https://github.com/tykarol/home-assistant-huawei-gpon-reboot/issues",
-  "version": "1.0.0"
+  "version": "v0.0.0"
 }
