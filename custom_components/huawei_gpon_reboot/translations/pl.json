@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Konfiguracja restartu routera Huawei GPON",
+        "description": "Podaj dane logowania administratora do swojego światłowodowego routera Huawei.",
+        "data": {
+          "router_ip": "Adres IP routera",
+          "username": "Nazwa użytkownika (Login)",
+          "password": "Hasło (zwykłe tekstowe)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nie można połączyć się z routerem. Sprawdź adres IP.",
+      "invalid_auth": "Niepoprawna nazwa użytkownika lub hasło. Spróbuj ponownie.",
+      "unknown": "Wystąpił nieoczekiwany błąd podczas weryfikacji danych."
+    },
+    "abort": {
+      "reconfigure_successful": "Dane logowania zostały pomyślnie zaktualizowane."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opcje routera Huawei GPON",
+        "description": "Skonfiguruj parametry czasowe działania integracji.",
+        "data": {
+          "timeout": "Czas oczekiwania na odpowiedź routera (sekundy)",
+          "scan_interval": "Częstotliwość sprawdzania statusu (sekundy)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "huawei_gpon_status": {
+        "name": "Status połączenia"
+      }
+    },
+    "button": {
+      "huawei_gpon_reboot": {
+        "name": "Uruchom ponownie"
+      }
+    }
+  }
+}

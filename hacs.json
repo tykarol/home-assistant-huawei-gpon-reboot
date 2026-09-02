@@ -1,0 +1,8 @@
+{
+  "name": "Huawei GPON Router Reboot",
+  "render_readme": true,
+  "zip_release": true,
+  "filename": "huawei_gpon_reboot.zip",
+  "country": "PL",
+  "homeassistant": "2026.1.0"
+}

@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Huawei GPON Router Reboot",
+        "description": "Provide the administrator login credentials for your Huawei fiber router.",
+        "data": {
+          "router_ip": "Router IP Address",
+          "username": "Username",
+          "password": "Password (plain text)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the router. Check the IP address.",
+      "invalid_auth": "Invalid username or password. Please try again.",
+      "unknown": "Unexpected error occurred during validation."
+    },
+    "abort": {
+      "reconfigure_successful": "Reconfiguration was successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Huawei GPON Router Options",
+        "description": "Configure the timing parameters for this integration.",
+        "data": {
+          "timeout": "Request timeout duration (seconds)",
+          "scan_interval": "Status polling interval (seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "huawei_gpon_status": {
+        "name": "Connectivity Status"
+      }
+    },
+    "button": {
+      "huawei_gpon_reboot": {
+        "name": "Reboot"
+      }
+    }
+  }
+}
